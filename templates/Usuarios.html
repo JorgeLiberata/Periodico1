@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{title.usuario}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Usuarios Registrados</h1>
+        </div>
+        <table class="table" id="verdana">
+            <thead>
+                <tr>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                    <th>Telefono</th>
+                    <th>E-Mail</th>
+                    <th>Ciudad</th>
+                    <th>Informaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dato in usuarios %}
+                <tr>
+                    <td>{{dato.nombres}}</td>
+                    <td>{{dato.apellidos}}</td>
+                    <td>{{dato.edad}}</td>
+                    <td>{{dato.sexo}}</td>
+                    <td>{{dato.telefono}}</td>
+                    <td>{{dato.email}}</td>
+                    <td>{{dato.ciudad}}</td>
+                    <td>{{dato.info}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <button class="btn btn-warning, col-md-2, col-xl-2, col-lg-2"><a href="http://127.0.0.1:5000/">Volver a Inicio</a></button>
+    </div>
+</body>
+
+</html>

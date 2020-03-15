@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>{{title.registro}}</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+</head>
+
+<body style="background-color: rgb(224, 223, 223);">
+    <div class="jumbotron">
+        <h1>Formulario de Registro de Usuario</h1>
+    </div>
+    <div class="container">
+        <!--------------------->
+        <!--Datos Personales -->
+        <!--------------------->
+        <div class="form-group">
+            <h2 class="h2">Datos Personales</h2>
+            <div class="row">
+                <div class="col-md-6, col-xl-6, col-lg-6">
+                    <label for="Nombres" class=" ">Nombres</label>
+                    <input type="text" placeholder="Nombres" class="form-control">
+                </div>
+                <div class="col-md-6, col-xl-6, col-lg-6">
+                    <label for="Apellidos">Apellidos</label>
+                    <input type="text" placeholder="Apellidos" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6, col-xl-6">
+                    <label for="edad">Edad: </label>
+                    <input type="text" placeholder="Edad" class="form-control">
+                </div>
+                <div class="form-check, col-md-6">
+                    <label class="form-check-label" for="exampleRadios1">
+                        Sexo:
+                    </label><br>
+                    <input class="form-check-input, col-md-1" type="radio" name="sexo" value="Masculino">
+                    <label class="form-check-label, col-md-2" for="exampleRadios1">
+                        Masculino
+                    </label>
+                    <input class="form-check-input, col-md-1" type="radio" name="sexo" value="Femenino">
+                    <label class="form-check-label, col-md-2" for="exampleRadios1">
+                        Femenino
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <!--------------------->
+        <!--Forma de Contacto-->
+        <!--------------------->
+        <div class="form-group">
+            <h2 class="h2">Forma de Contacto: </h2><br>
+            <div class="row">
+                <div class="col-md-6, col-xl-6, col-lg-6">
+                    <label for="Telefono">Telefono: </label>
+                    <input type="text" placeholder="Telefono" class="form-control">
+                </div>
+                <div class="col-md-6, col-xl-6, col-lg-6">
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" placeholder="E-mail" class="form-control">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6, col-xl-6, col-lg-6">
+                    <label for="Ciudad">Ciudad: </label>
+                    <select name="Ciudad" id="" class="custom-select">
+                        <option >Ciudad</option>
+                        <option >Distrito Nacional</option>
+                        <option >Santo Domingo Norte</option>
+                        <option >Santo Domingo Este</option>
+                        <option >Santo Domingo Oeste</option>
+                        <option >San Cristobal</option>
+                        <option >Bani</option>
+                    </select>
+                </div><br>
+            </div>
+        </div>
+        <!---------------------->
+        <!--Recibir Publicidad-->
+        <!---------------------->
+        <div class="row">
+            <div class="col-md-12, col-xl-12, col-lg-12">
+                <label for="CorreosInformativos"> <p> Deseas recibir Correos Informativos?</p></label>
+                <input type="checkbox" class="custom-checkbox">
+            </div>
+        </div>
+        <!---------------------->
+        <!--Enviar Informacion-->
+        <!---------------------->
+        <div class="row">
+            <div class="col-md-5, col-xl-5, col-lg-5">
+                <input type="submit" class="btn btn-primary" value="Guardar">
+            </div>
+            <button class="btn btn-warning, col-md-6, col-xl-6, col-lg-6"><a href="http://127.0.0.1:5000/">Volver a Inicio</a></button>
+        </div>
+    </div><br>
+</body>
+
+</html>
